@@ -74,7 +74,7 @@ export function getRecords() {
   };
 }
 
-export function getRecord(id: number) {
+export function getRecord(id: string) {
   return async () => {
     try {
       const response = await axiosServices.get(`/Prod/${id}/`);

@@ -16,7 +16,7 @@ export default function RecordDetail() {
   const record: any = useSelector((state) => state.record.record);
 
   useEffect(() => {
-    dispatch(getRecord(+params.id));
+    dispatch(getRecord(params.id.toString()));
   }, [params.id, dispatch]);
 
   return (
